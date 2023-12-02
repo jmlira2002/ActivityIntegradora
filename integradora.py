@@ -6,7 +6,6 @@ import plotly.express as px2
 from PIL import Image
 import base64
 import plotly.figure_factory as ff
-import matplotlib.pyplot as plt
 
 st.set_page_config(
     page_title="Police Incident Report 2018 - 2020 San Francisco",
