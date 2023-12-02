@@ -108,7 +108,7 @@ subset_data3 = subset_data.copy()
 year_tend = st.multiselect('Year',subset_data3['Year'].unique().tolist(), default='2018')
 if len(year_tend) > 0:
     subset_data3 = subset_data[subset_data['Year'].isin(year_tend)]
-month_tend = st.multiselect('Month',subset_data3['Month'].unique().tolist(), default=('January', 'February', 'March'))
+month_tend = st.multiselect('Month',subset_data3['Month'].unique().tolist(), default=('July', 'August'))
 if len(month_tend) > 0:
     subset_data3 = subset_data3[subset_data3['Month'].isin(month_tend)]
 
