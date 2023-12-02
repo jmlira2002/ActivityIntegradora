@@ -6,7 +6,6 @@ import plotly.express as px2
 from PIL import Image
 import base64
 import plotly.figure_factory as ff
-from bokeh.plotting import figure
 import matplotlib.pyplot as plt
 
 st.set_page_config(
