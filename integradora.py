@@ -23,7 +23,7 @@ def logo_to_base64(image):
 
 ######Cargar logo y encabezado de tablero################
 logo_path = "Police.png"
-logo = Image.open(r"C:\Vscode\Police.png")
+logo = Image.open(r"Police.png")
 title = "Police Incident Reports from 2018 to 2020 in San Francisco"
 st.markdown(
     """
