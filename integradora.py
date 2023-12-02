@@ -63,7 +63,7 @@ if len(police_district_input) > 0:
     subset_data2 = mapa[mapa['Police District'].isin(police_district_input)]
     
 subset_data1 =subset_data2
-neighborhood_options = subset_data2['Neighborhood'].unique().tolist()
+neighborhood_options = subset_data2['Neighborhood'].unique()
 neighborhood_input = st.sidebar.multiselect('Neighborhood', neighborhood_options, default=['Chinatown', 'Tenderloin', 'Seacliff', 'Excelsior'])
 
 subset_data3 = subset_data1
