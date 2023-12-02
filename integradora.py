@@ -65,9 +65,6 @@ if len(police_district_input) > 0:
 subset_data1 =subset_data2
 neighborhood_options = subset_data2['Neighborhood'].unique().tolist()
 neighborhood_input = st.sidebar.multiselect('Neighborhood', neighborhood_options, default=['Chinatown', 'Tenderloin', 'Seacliff', 'Excelsior'])
-if len(neighborhood_input) > 0:
-    subset_data1 = subset_data2[subset_data2['Neighborhood'].isin(neighborhood_input)]
-
 
 subset_data3 = subset_data1
 incident_input = st.sidebar.multiselect(
